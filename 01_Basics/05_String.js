@@ -24,3 +24,4 @@ console.log(url.replace('%20','-'));
 console.log(url);
 
 console.log(url.includes('raj'))
+console.log(url.split('__'));
