@@ -36,3 +36,9 @@ console.log(Array.from({name: "sddharth"}))
 /**
  However, as explained before, Array.from({name: "siddharth"}) will still return an empty array [], because {name: "siddharth"} is neither an iterable nor an array-like object. It’s a plain object with one property name
  */
+
+ let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3));
