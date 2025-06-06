@@ -1,3 +1,5 @@
+
+/*
 //let name='raju' //global variable
 function outerFunction(){
     {
@@ -14,3 +16,13 @@ function outerFunction(){
 }
 outerFunction()
 //closure is a function that has access to its own scope, the outer function's scope and the global scope
+*/
+function outer(){
+    let name="raju" //local variable
+    function inner(){
+        console.log("Hello "+name) //accessible only in inner function
+    }
+    return inner //returning inner function
+}
+    let inner=outer() //inner function is assigned to inner variable
+    inner() //calling inner function
