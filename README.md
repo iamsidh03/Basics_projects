@@ -1,2 +1,1 @@
-# js
-A code repo for JavaScript
+This repo has many beginner projects
