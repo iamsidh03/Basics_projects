@@ -1,0 +1,130 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container styling */
+#container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+#header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input form */
+#todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#input-btn {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#input-btn:hover {
+  background-color: #45a049;
+}
+
+/* Task list */
+#list-container {
+  list-style: none;
+}
+
+#list-container li {
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list-container li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-text {
+  word-break: break-word;
+}
+
+/* Buttons inside list items */
+.edit-btn,
+.delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1976d2;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Completed task style */
+.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+  opacity: 0.7;
+}
+
+/* Counter section */
+.counter-container {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
